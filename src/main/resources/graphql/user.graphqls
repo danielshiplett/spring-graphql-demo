@@ -1,0 +1,15 @@
+extend type Query {
+    me: User!
+}
+
+type User {
+    id: ID!
+    name: String!
+    comments: [Comment!]
+}
+
+type Comment {
+    id: ID!
+    body: String!
+    user: User!
+}

@@ -1,0 +1,13 @@
+
+spring:
+  application:
+    name: example
+
+  graphql:
+    graphiql:
+      enabled: true
+
+  output:
+    ansi:
+      enabled: always
+
