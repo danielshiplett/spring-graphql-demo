@@ -62,24 +62,14 @@ tasks.named<GraphQLCodegenGradleTask>("graphqlCodegen") {
     apiPackageName = "com.example.graphql.api"
     modelPackageName = "com.example.graphql.model"
 
-//    parentInterfaces {
-//        queryResolver = "graphql.kickstart.tools.GraphQLQueryResolver"
-//        mutationResolver = "graphql.kickstart.tools.GraphQLMutationResolver"
-//        subscriptionResolver = "graphql.kickstart.tools.GraphQLSubscriptionResolver"
-//        resolver = "graphql.kickstart.tools.GraphQLResolver<{{TYPE}}>"
-//    }
-
-    modelNameSuffix = "GQL"
-
     addGeneratedAnnotation = true
 
-    fieldsWithResolvers = setOf("User.comments")
+    fieldsWithResolvers = setOf("@customResolver")
 
     generatedLanguage = GeneratedLanguage.KOTLIN
     generateApis = true
     generateEqualsAndHashCode = true
     subscriptionReturnType = "org.reactivestreams.Publisher"
-//    supportUnknownFields = true
     unknownFieldsPropertyName = "additionalFields"
 }
 
