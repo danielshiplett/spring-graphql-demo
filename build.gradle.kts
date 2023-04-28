@@ -26,6 +26,7 @@ configurations {
 repositories {
     mavenCentral()
     maven(url = "https://repo.spring.io/snapshot")
+    maven(url = "https://repo.spring.io/milestone")
 }
 
 dependencies {
@@ -35,7 +36,7 @@ dependencies {
 
     implementation("org.springframework.boot:spring-boot-starter-graphql")
     implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("org.springframework.graphql:spring-graphql:1.2.0-SNAPSHOT")
+    implementation("org.springframework.graphql:spring-graphql:1.2.0-RC1")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 
