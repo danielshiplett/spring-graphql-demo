@@ -36,9 +36,10 @@ dependencies {
 
     implementation("org.springframework.boot:spring-boot-starter-graphql")
     implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("org.springframework.graphql:spring-graphql:1.2.0-RC1")
+    implementation("org.springframework.graphql:spring-graphql:1.2.0-20230428.151417-51")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+    implementation("io.github.oshai:kotlin-logging-jvm:4.0.0-beta-28")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.springframework.graphql:spring-graphql-test")
